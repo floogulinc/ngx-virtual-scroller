@@ -1,7 +1,3 @@
-# v4.0.3
-
-* Support for 1000000+ items
-
 # v4.0.2
 
 * Add RTL Support

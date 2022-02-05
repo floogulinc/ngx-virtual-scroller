@@ -14,6 +14,7 @@
     "build:all2": "npm run build",
     "lint": "tslint src/**/*.ts",
     "debug-demo": "npm run build:all && cd demo && npm run start",
+    "test": "echo \"Not implemented\" && exit 1",
     "ngc": "ngc",
     "update-npm-versions": "npm-check --skip-unused --update-all --save-exact --ignore typescript --ignore @tweenjs/tween.js --ignore @types/tween.js",
     "___prepublishOnly": "PLEASE RUN \"npm run prod-publish\" NOT \"npm publish\"",
