@@ -27,18 +27,18 @@ This method is effective because the number of DOM elements are always constant 
 
 ## New features:
 
- - RTL Support on Horizontal scrollers
- - Support for fixed `<thead>` on `<table>` elements.
- - Added API to query for current scroll px position (also passed as argument to `IPageInfo` listeners)
- - Added API to invalidate cached child item measurements (if your child item sizes change dynamically)
- - Added API to scroll to specific px position
- - If scroll container resizes, the items will auto-refresh. Can be disabled if it causes any performance issues by setting `[checkResizeInterval]="0"`
- - `useMarginInsteadOfTranslate` flag. Defaults to _false_. This can affect performance (better/worse depending on your circumstances), and also creates a workaround for the transform+position:fixed browser bug.
- - Support for horizontal scrollbars
- - Support for elements with different sizes
- - Added ability to put other elements inside of scroll (Need to wrap list itself in @ContentChild('container'))
- - Added ability to use any parent with scrollbar instead of this element (@Input() parentScroll)
- - Angular 13 Support 
+- RTL Support on Horizontal scrollers
+- Support for fixed `<thead>` on `<table>` elements.
+- Added API to query for current scroll px position (also passed as argument to `IPageInfo` listeners)
+- Added API to invalidate cached child item measurements (if your child item sizes change dynamically)
+- Added API to scroll to specific px position
+- If scroll container resizes, the items will auto-refresh. Can be disabled if it causes any performance issues by setting `[checkResizeInterval]="0"`
+- `useMarginInsteadOfTranslate` flag. Defaults to _false_. This can affect performance (better/worse depending on your circumstances), and also creates a workaround for the transform+position:fixed browser bug.
+- Support for horizontal scrollbars
+- Support for elements with different sizes
+- Added ability to put other elements inside of scroll (Need to wrap list itself in @ContentChild('container'))
+- Added ability to use any parent with scrollbar instead of this element (@Input() parentScroll)
+- Angular 13 Support
 
 ## Demo
 
@@ -551,7 +551,7 @@ ChangeDetectionStrategy.OnPush means the consuming app is taking full responsibi
 OnPush is much harder for the programmer to code. You have to code things differently: This means
 1) avoid mutating state on any bound properties where possible &
 2) manually running change detection when you do mutate state.
-OnPush can be done on a component-by-component basis, however I recommend doing it for *EVERY* component in your app.
+   OnPush can be done on a component-by-component basis, however I recommend doing it for *EVERY* component in your app.
 
 If your biggest priority is making _virtual-scroller_ faster, the best candidates for _OnPush_ will be all custom components being used as children underneath _virtual-scroller_. If you have a hierarchy of multiple custom components under virtual-scroller, ALL of them need to be converted to _OnPush_.
 
@@ -757,7 +757,7 @@ Contributions are very welcome! Just send a pull request. Feel free to contact m
 ### Hope this module is helpful to you. Please make sure to checkout my other [projects](https://github.com/rintoj) and [articles](https://medium.com/@rintoj). Enjoy coding!
 
 Follow me:
-  [GitHub](https://github.com/rintoj)
+[GitHub](https://github.com/rintoj)
 | [Facebook](https://www.facebook.com/rinto.jose)
 | [Twitter](https://twitter.com/rintoj)
 | [Google+](https://plus.google.com/+RintoJoseMankudy)

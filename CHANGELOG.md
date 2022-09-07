@@ -1,3 +1,7 @@
+# v14.0.2
+
+* Angular 14 Support
+* Build with Angular 14 CLI Layout
 # v4.0.2
 
 * Add RTL Support
